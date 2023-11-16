@@ -1,0 +1,12 @@
+.page {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100%;
+  color: var(--blue-dark);
+  background-color: var(--blue-light);
+}
+
+.page__content {
+  padding-top: 80px;
+  padding-bottom: 160px;
+}

@@ -1,0 +1,19 @@
+@mixin media($size) {
+  @if ($size == sm) {
+    @media only screen and (width >= $screen-sm) {
+      @content;
+    }
+  }
+
+  @if ($size == md) {
+    @media only screen and (width >= $screen-md) {
+      @content;
+    }
+  }
+
+  @if ($size == lg) {
+    @media only screen and (width >= $screen-lg) {
+      @content;
+    }
+  }
+}

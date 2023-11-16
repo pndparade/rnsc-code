@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('../blocks/head/head.html', {"title": "Главная страница"})
+<body class="page">
+  @@include('../blocks/header/header.html')
+
+  <div class="page__content">
+    <div class="container">
+      <h1 class="page-title">Проекты от ЖК «Возрождение»</h1>
+
+      <div class="project-list">
+        @@include('../blocks/project/project.html', {
+          "title": "Литер 1",
+          "imgSrc": "assets/images/photo-1.jpg"
+        })
+
+        @@include('../blocks/project/project.html', {
+          "title": "Литер 2",
+          "imgSrc": "assets/images/photo-2.jpg"
+        })
+
+        @@include('../blocks/project/project.html', {
+          "title": "Литер 3",
+          "imgSrc": "assets/images/photo-3.jpg"
+        })
+      </div>
+    </div>
+  </div>
+
+  @@include('../blocks/footer/footer.html')
+</body>
+</html>

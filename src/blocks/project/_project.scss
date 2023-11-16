@@ -1,0 +1,50 @@
+.project {
+  padding: 10px 10px 20px;
+  background-color: var(--white);
+  border-radius: 20px;
+  box-shadow: var(--block-shadow);
+
+  @include media(md) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+  }
+
+  @include media(lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__img {
+    margin-bottom: 20px;
+
+    @include media(md) {
+      margin-bottom: 0;
+    }
+
+    @include media(lg) {
+      grid-column: span 2;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 20px;
+    font-size: 24px;
+  }
+
+  &__data {
+
+    & + .project__data {
+      margin-top: 10px;
+    }
+  }
+
+  &__action {
+    margin-top: 40px;
+  }
+}

@@ -1,0 +1,26 @@
+:root {
+  // font
+  --font-family: "Montserrat", "Arial", "Helvetica", sans-serif;
+  --font-size: 16px;
+
+  // layout
+  --page-padding-inline: 20px;
+  --header-height: 100px;
+
+  // colors
+  --white: #ffffff;
+  
+  --blue-light: #F2F9FF;
+  --blue-middle: #007FFF;
+  --blue-dark: #002040;
+
+  --gradient-blue: linear-gradient(180deg, #409FFF 0%, #007FFF 100%);
+
+  --button-shadow: 0px -2px 0px 0px rgba(0, 32, 64, 0.10) inset, 0px 2px 0px 0px rgba(255, 255, 255, 0.25) inset, 0px 10px 10px 0px rgba(0, 32, 64, 0.10);
+  --block-shadow: 0px 20px 20px 0px rgba(0, 63, 128, 0.05);
+}
+
+// media breakpoints
+$screen-sm: 768px;
+$screen-md: 1024px;
+$screen-lg: 1280px;
