@@ -8,6 +8,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 40px;
+    padding: 10px;
   }
 
   @include media(lg) {
@@ -19,6 +20,16 @@
 
     @include media(md) {
       margin-bottom: 0;
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
     }
 
     @include media(lg) {
@@ -32,11 +43,23 @@
     }
   }
 
-  &__title {
+  &__main {
+
+    @include media(md) {
+      padding: 40px 30px 40px 0;
+    }
+  }
+
+  &__name {
     margin: 0 0 20px;
     font-size: 24px;
   }
 
+  &__title {
+    margin: 0 0 20px;
+    font-size: 24px;
+  }
+  
   &__data {
 
     & + .project__data {
