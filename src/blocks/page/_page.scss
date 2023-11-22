@@ -4,6 +4,13 @@
   min-height: 100%;
   color: var(--blue-dark);
   background-color: var(--blue-light);
+
+  &.page--mainpage {
+
+    .page__content {
+      padding-top: 0;
+    }
+  }
 }
 
 .page__content {

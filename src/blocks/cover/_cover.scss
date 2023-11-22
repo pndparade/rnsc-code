@@ -1,0 +1,93 @@
+.cover {
+
+  @include media(md) {
+    height: 600px;
+    padding-top: var(--header-height);
+    margin-top: calc(var(--header-height) * -1);
+    background: url("../images/lead-bg.jpg") no-repeat center top;
+  }
+
+  @include media(lg) {
+    height: 800px;
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  &__layout {
+    @include media(md) {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      align-items: center;
+      height: 100%;
+    }
+  }
+
+  &__img {
+    display: block;
+    height: 250px;
+
+    @include media(md) {
+      display: none;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    padding: 40px var(--page-padding-inline) 80px;
+    background: #fff;
+
+    @include media(md) {
+      background: none;
+      padding-bottom: 40px;
+      grid-column: span 7;
+    }
+
+    p {
+      margin: 15px 0 0 0;
+    }
+
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 36px;
+    font-weight: 500;
+    text-wrap: balance;
+  }
+
+  &__action {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @include media(sm) {
+      flex-direction: row;
+    }
+
+    @include media(md) {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .button {
+        width: 340px;
+      }
+      
+    }
+
+    @include media(lg) {
+      flex-direction: row;
+
+      .button {
+        width: auto;
+      }
+    }
+  }
+}
