@@ -6,9 +6,30 @@
 
   <div class="page__content">
     @@include('../blocks/cover/cover.html')
-
+    
+    <h2>Преимущества</h2>
+    @@include('../blocks/feature/feature.html')
   </div>
 
   @@include('../blocks/footer/footer.html')
+
+
+  <!-- Slider main container -->
+<div class="swiper js-gallery-slider">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+  </div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+</div>
 </body>
 </html>

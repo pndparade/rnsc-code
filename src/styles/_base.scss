@@ -11,3 +11,9 @@ html {
   font-size: var(--font-size);
   font-variant-numeric: lining-nums proportional-nums;
 }
+
+.block {
+  width: 100px;
+  height: 100px;
+  background: grey url("../images/sprite.svg#car") no-repeat;
+}
