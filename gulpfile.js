@@ -20,8 +20,6 @@ import terser from 'gulp-terser';
 import imagemin from 'gulp-imagemin';
 import svgSprite from 'gulp-svg-sprite';
 
-import svgSprite from 'gulp-svg-sprite';
-
 import bs from 'browser-sync';
 
 const sass = gulpSass(dartSass);
@@ -76,7 +74,7 @@ function script() {
 }
 
 function copyDevendencies() {
-  return gulp.src('node_modules/')
+  return gulp.src(['node_modules/swiper/swiper-bundle.min.js'])
   .pipe(gulp.dest('build/assets/js/'));
 }
 
