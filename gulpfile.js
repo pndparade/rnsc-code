@@ -20,6 +20,8 @@ import terser from 'gulp-terser';
 import imagemin from 'gulp-imagemin';
 import svgSprite from 'gulp-svg-sprite';
 
+import svgSprite from 'gulp-svg-sprite';
+
 import bs from 'browser-sync';
 
 const sass = gulpSass(dartSass);
@@ -149,6 +151,7 @@ const dev = gulp.series(
 );
 
 export { clean };
+export { createSvgSprite };
 export { build };
 export { styles };
 export default dev;
